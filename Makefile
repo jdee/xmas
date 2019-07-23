@@ -1,4 +1,3 @@
-CC=gcc
 CFLAGS=-Wno-logical-not-parentheses
 PROG=xmas
 
