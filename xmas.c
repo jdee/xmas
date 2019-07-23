@@ -43,13 +43,9 @@ LEAST LIKELY TO COMPILE SUCCESSFULLY:
 
 #include <stdint.h>
 #include <stdio.h>
-#if __SIZEOF_POINTER__ == __SIZEOF_LONG__
-typedef long long_t;
-#else
-typedef long long long_t;
-#endif
+typedef intptr_t L;
 #define MAIN(t, u, v) main(t, (char**)(u), (char**)(v))
-#define T (long)t
+#define T (L)t
 
 int
 main(int t,char**u,char**v)
@@ -61,7 +57,7 @@ char
 a;
  */
 {
-long_t _ = (long_t)u;
+L _ = (L)u;
 char* a = (char *)v;
 long q = *a;
 return!
@@ -114,7 +110,7 @@ MAIN((*a == '/') + t, _, a + 1 )
 MAIN ( 2, 2 , "%s")
 :*a=='/'||
 
-MAIN(0,(long_t)
+MAIN(0,(L)
 
 MAIN(-61,q, "!ek;dc i@bK'(q)-[w]*%n+r3#l,{}:\nuwloca-O;m .vpbks,fxntdCeghiry")
 
