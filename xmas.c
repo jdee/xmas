@@ -13,8 +13,8 @@
  * of the original code.
  *
  * This surgery is limited to
- * 1. Some preprocessor directives before main() for the purpose of type
- *    conversion. Apparently C is now type safe.
+ * 1. Some preprocessor directives and a typedef before main() for the purpose
+ *    of type conversion.
  * 2. Conversion of argument syntax from K&R to ANSI.
  * 3. Conformity with the ANSI signature of main().
  * 4. Some stack variables at the start of main to facilitate said type safety
