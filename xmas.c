@@ -41,7 +41,13 @@ LEAST LIKELY TO COMPILE SUCCESSFULLY:
   added a missing comma at column 59.
 */
 
+#include <stdint.h>
 #include <stdio.h>
+#if __SIZEOF_POINTER__ == __SIZEOF_LONG__
+typedef long long_t;
+#else
+typedef long long long_t;
+#endif
 #define MAIN(t, u, v) main(t, (char**)(u), (char**)(v))
 #define T (long)t
 
@@ -55,7 +61,7 @@ char
 a;
  */
 {
-long _ = (long)u;
+long_t _ = (long_t)u;
 char* a = (char *)v;
 long q = *a;
 return!
@@ -108,7 +114,7 @@ MAIN((*a == '/') + t, _, a + 1 )
 MAIN ( 2, 2 , "%s")
 :*a=='/'||
 
-MAIN(0,(long)
+MAIN(0,(long_t)
 
 MAIN(-61,q, "!ek;dc i@bK'(q)-[w]*%n+r3#l,{}:\nuwloca-O;m .vpbks,fxntdCeghiry")
 
