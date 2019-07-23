@@ -33,6 +33,7 @@ make hay
 Windows:
 ```
 cl xmas.c
+xmas
 ```
 
 The original K&R:
