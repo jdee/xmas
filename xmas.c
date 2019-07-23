@@ -59,7 +59,7 @@ a;
 {
 L _ = (L)u;
 char* a = (char *)v;
-long q = *a;
+L q = *a;
 return!
 
 0<t?
