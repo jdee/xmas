@@ -50,7 +50,7 @@ typedef intptr_t L;
 int
 main(int t,char**u,char**v)
 /*
- With apologies to Brian Kernighan and Dennis Ritchie. --JD
+ * With apologies to Brian Kernighan and Dennis Ritchie. --JD
 main(t,_,a)
 char
 *
@@ -59,7 +59,11 @@ a;
 {
 L _ = (L)u;
 char* a = (char *)v;
-L q = *a;
+/*
+ * Where Java would throw a NullPointerException, in C we retain some capacity
+ * for creativity and can put a NULL pointer to good use. --JD
+ */
+L q = 0[a];
 return!
 
 0<t?
