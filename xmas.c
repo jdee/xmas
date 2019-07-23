@@ -5,7 +5,7 @@
  * single line of code.
  *
  * It is regrettably difficult to compile K&R C in 2019, so I've updated it to
- * ANSI C to build and run cleanly with GCC & Clang.
+ * ANSI C to build and run cleanly with GCC, Clang & Visual C.
  *
  * Some changes were necessary to compile. Others suppress warnings without
  * resorting to compiler options or pragmata. All changes have been made in
