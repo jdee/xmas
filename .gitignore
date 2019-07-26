@@ -3,3 +3,7 @@
 xmas
 *.obj
 *.exe
+*.vcxproj.user
+.vs
+Debug
+Release

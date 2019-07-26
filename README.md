@@ -35,6 +35,7 @@ Windows:
 cl xmas.c
 xmas
 ```
+or use the Visual Studio Solution xmas.sln in the repo.
 
 The original K&R:
 ```c
